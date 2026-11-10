@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Caldera](screenshot.png)
 
-Caldera is a clean-room design with the feature set of FabFilter Volcano 3 (2021). Version 1 followed the original Volcano (2005); version 3 follows Volcano 3. It was written from scratch, working only from FabFilter's public product pages, online help and release announcements. No FabFilter code, binaries, presets, artwork or trademarks were used.
+Caldera is a filter effect with up to four filters, serial, parallel and paired routing, eleven filter styles and a modulation system of XLFOs, envelopes, followers and XY pads. It was written from scratch; no third-party code, presets or artwork are included.
 
 The filters are cascaded topology-preserving state-variable filters (Zavalishin) with Butterworth stage damping; bell, shelf, notch and all-pass shapes are built from the same sections, so each style's published-technique nonlinearity colours them too.
 
@@ -87,27 +87,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Caldera*
 
 ![Help](screenshot-help.png)
 
-### Compared with FabFilter Volcano 3
-
-| Volcano 3 | Caldera 3.0 |
-|---|---|
-| Up to four filters | ✓ |
-| Flexible serial and parallel routing | ✓ serial, parallel and two paired layouts |
-| Stereo, per-channel (L/R) and mid/side routing modes | ✓ |
-| Low/high/band pass, bell, low/high shelf, notch and all-pass shapes, non-linear | ✓ all shapes follow the style |
-| Slopes including 6 dB/oct | ✓ 6, 12, 24, 48 dB/oct |
-| Several vintage-style filter characters, self-oscillation and saturation | ✓ eleven original styles |
-| Per filter: drive, frequency with stereo pan ring, peak, delay up to 50 ms, output level and pan | ✓ plus key tracking |
-| High Quality oversampling | ✓ 4x |
-| XLFOs (16-step), envelope generators, envelope followers, MIDI sources, XY controllers | ✓ |
-| Drag-and-drop modulation with live visualisation and a floating slot panel | ✓ 50 slots |
-| Per-component presets for modulation sources | ✓ |
-| Interactive display with optional piano display | ✓ |
-| Input and output level/pan, mix, auto-mute self-oscillation | ✓ |
-| MIDI Learn, undo/redo, A/B, help with interactive hints | ✓ |
-| Loads earlier Volcano presets | Loads Caldera 1.x and 2.x projects and presets, sounding identical |
-| Resizable interface, full-screen mode | Freely resizable interface |
-| Mono version, AAX, AudioSuite, iPad | Not supported |
+Not supported: Mono version, AAX, AudioSuite, iPad.
 
 ## Build from source
 
@@ -171,7 +151,7 @@ New parameters are only ever appended, so saved sessions and automation keep wor
 ## Changelog
 
 - **3.1:** the preset browser searches names and categories as you type, and keeps Favourites.
-- **3.0:** Brings Caldera up to Volcano 3. New in this version:
+- **3.0:** New in this version:
   - Four filters, with serial, parallel and two paired routings, in stereo, left/right or mid/side.
   - Bell, shelf, notch and all-pass shapes; a 6 dB/oct slope.
   - Four new styles: Tube, Gentle, Metal and Hollow (eleven in all).
@@ -189,5 +169,3 @@ New parameters are only ever appended, so saved sessions and automation keep wor
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Caldera/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter" and "FabFilter Volcano" are trademarks of FabFilter Software Instruments. Caldera is not affiliated with or endorsed by FabFilter.
