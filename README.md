@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Caldera](screenshot.png)
 
-Caldera is a filter effect with up to four filters, serial, parallel and paired routing, eleven filter styles and a modulation system of XLFOs, envelopes, followers and XY pads. It was written from scratch; no third-party code, presets or artwork are included.
+Caldera is a filter effect with up to four filters, serial, parallel and paired routing, eleven filter styles and a modulation system of XLFOs, envelopes, followers and XY pads. It was written from scratch: the DSP, interface and presets are original work, and third-party components (such as the DPF framework) are listed under [License](#license).
 
 The filters are cascaded topology-preserving state-variable filters (Zavalishin) with Butterworth stage damping; bell, shelf, notch and all-pass shapes are built from the same sections, so each style's published-technique nonlinearity colours them too.
 
